@@ -64,7 +64,7 @@ void myreshape(int h, int w) {
 	glViewport(0, 0, h, w);
 }
 
-#include "myfunction.c"
+//#include "myfunction.c"
 char* blurRsltImgName = "Blur.bmp";
 char* sharpRsltImgName = "Sharpen.bmp";
 

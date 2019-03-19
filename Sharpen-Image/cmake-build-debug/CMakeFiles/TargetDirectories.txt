@@ -1,3 +1,0 @@
-/home/limor/Desktop/תרגיל 5 מבנה מחשב/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/limor/Desktop/תרגיל 5 מבנה מחשב/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/limor/Desktop/תרגיל 5 מבנה מחשב/cmake-build-debug/CMakeFiles/_5__.dir

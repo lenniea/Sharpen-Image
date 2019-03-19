@@ -1,4 +1,5 @@
 	// 308142389 Limor Levi
+#include "readBMP.h"
 
 typedef struct {
     unsigned char red;
@@ -13,11 +14,12 @@ typedef struct {
     I combine all the functions from the original code in one function because it is time consuming*/
 
 void myfunction(Image *image, char *srcImgpName, char *blurRsltImgName,char *sharpRsltImgName) {
+    int n = image->sizeX;
+    int m = image->sizeY;
     // use variable from type 'register int' is much more efficient from 'int'
-    register int nPower2 = n * n;
+    register int nPixels = n * m;
 
-    // malloc ( 3 * nPower2 ) - instead of multiply with 3 , I used shift
-    pixel *src = malloc( ((nPower2)<<1) + nPower2);
+    pixel *src = malloc( nPixels * 3);
 
     // step : blur the image 
     // do function "charsToPixels" here =  copy the image to a pixels array -> calling to function is time consuming
